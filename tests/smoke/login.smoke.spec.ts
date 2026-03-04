@@ -3,7 +3,7 @@ import { LoginPage } from "../../src/pages/LoginPage";
 import { InventoryPage } from "../../src/pages/InventoryPage";
 import { users } from "../../src/data/users";
 
-test("Benutzer kann sich erfolgreich anmelden", async ({ page }) => {
+test(" [@smoke] Benutzer kann sich erfolgreich anmelden", async ({ page }) => {
   const login = new LoginPage(page);
   const inventory = new InventoryPage(page);
 

@@ -9,8 +9,16 @@ export class CheckoutOverviewPage {
     this.finishButton = page.locator('[data-test="finish"]');
   }
 
+  private item(name: string) {
+    return this.page.locator(".cart_item").filter({ hasText: name });
+  }
+
   async expectLoaded() {
     await expect(this.title).toHaveText("Checkout: Overview");
+  }
+
+  async expectItemVisible(name: string) {
+    await expect(this.item(name)).toBeVisible();
   }
 
   async finish() {
