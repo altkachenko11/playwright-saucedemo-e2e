@@ -1,4 +1,4 @@
-![Playwright Tests](https://github.com/altkachenko11/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)
+[![Playwright Tests](https://github.com/altkachenko11/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/altkachenko11/playwright-saucedemo-e2e/actions)
 # Playwright E2E Test Framework
 
 Ein End-to-End Testautomatisierungsprojekt für die Webanwendung **SauceDemo**, implementiert mit **Playwright** und **TypeScript**.
