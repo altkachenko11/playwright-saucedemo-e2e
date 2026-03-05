@@ -1,7 +1,8 @@
 [![Playwright Tests](https://github.com/altkachenko11/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/altkachenko11/playwright-saucedemo-e2e/actions)
-# Playwright E2E Test Framework
 
-Ein End-to-End Testautomatisierungsprojekt für die Webanwendung **SauceDemo**, implementiert mit **Playwright** und **TypeScript**.
+# Playwright E2E und API Tests Framework
+
+Ein End-to-End und API Testautomatisierungsprojekt für die Webanwendung **SauceDemo**, implementiert mit **Playwright** und **TypeScript**.
 
 Dieses Projekt demonstriert, wie ein modernes Testautomatisierungsframework für Webanwendungen aufgebaut werden kann.
 
@@ -19,7 +20,6 @@ Dieses Projekt demonstriert, wie ein modernes Testautomatisierungsframework für
 
 ## Projektstruktur
 
-
 src/
 pages/ # Page Objects
 data/ # Testdaten
@@ -30,21 +30,27 @@ smoke/ # Smoke Tests
 regression/ # Regression Tests
 negative/ # Negative Tests
 
-
 ---
 
 ## Testabdeckung
 
 ### Smoke Tests
+
 - Benutzer kann sich erfolgreich anmelden
 - Produktliste wird korrekt geladen
 - Erfolgreicher Checkout-Prozess
 
 ### Regression Tests
+
 - Produkt kann in den Warenkorb gelegt werden
 
 ### Negative Tests
+
 - Validierung beim Checkout (fehlende Postleitzahl)
+
+### API Tests
+
+- JSONPlaceholder (GET posts, negative 404)
 
 ---
 
@@ -92,3 +98,4 @@ Page Object Model
 Testdatenverwaltung
 
 automatisierter CI Pipeline
+```
